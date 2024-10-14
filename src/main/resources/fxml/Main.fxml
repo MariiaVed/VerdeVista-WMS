@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.lu.ics.controllers.MainController">
+  <tabs>
+    <Tab fx:id="productTab" onSelectionChanged="#changedTab" text="Product">
+      <content>
+          <fx:include fx:id="product" source="Product.fxml" />
+      </content>
+    </Tab>
+      <Tab fx:id="warehouseTab" onSelectionChanged="#changedTab" text="Warehouse">
+        <content>
+            <fx:include fx:id="warehouse" source="Warehouse.fxml" />
+        </content>
+      </Tab>
+      <Tab fx:id="supplierTab" onSelectionChanged="#changedTab" text="Supplier">
+        <content>
+            <fx:include fx:id="supplier" source="Supplier.fxml" />
+        </content>
+      </Tab>
+      <Tab fx:id="categoryTab" onSelectionChanged="#changedTab" text="Category">
+        <content>
+            <fx:include fx:id="category" source="Category.fxml" />
+        </content>
+      </Tab>
+      <Tab fx:id="metadataTab" onSelectionChanged="#changedTab" text="Metadata">
+        <content>
+            <fx:include fx:id="metadata" source="Metadata.fxml" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
